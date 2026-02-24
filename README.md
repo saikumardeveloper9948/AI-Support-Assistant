@@ -18,6 +18,7 @@ If information is not found in documentation, it responds:
 “Sorry, I don’t have information about that.”
 
 📂 Project Structure
+```bash
 AI-Support-Assistant/
 │
 ├── backend/
@@ -44,9 +45,12 @@ AI-Support-Assistant/
 │ ├── public/ # Static assets
 │ │
 │ ├── src/
+| | |
 │ │ │
 │ │ ├── assets/ # Images/icons
-│ │ │
+│ │ │ ├──UI_Laptop_view.png
+| | | ├──UI-Mobile-view.png
+| | | ├──UI-Tab-view.png
 │ │ ├── Components/
 │ │ │ ├── ChatWindow.jsx # Main chat UI logic
 │ │ │ ├── HeaderBar.jsx # Header + New Chat button
@@ -71,7 +75,7 @@ AI-Support-Assistant/
 ├── .gitignore
 └── README.md # Main project documentation
 
-
+```
 🧠 Architecture Overview
 React (Frontend)
         ↓
@@ -85,21 +89,29 @@ LLM Provider (OpenAI / OpenRouter / etc.)
 
 
 🚀 How To Run The Project (From Scratch)
+
 🔧 1️⃣ Backend Setup
+
 📦 Step 1: Navigate to Backend
+
 cd backend
+
 📦 Step 2: Install Dependencies
+
 npm install
+
 📦 Step 3: Create .env File
 
 Create a .env file inside backend/:
 
 PORT=5000
+
 OPENROUTER_API_KEY=your_api_key_here
 
 Use OpenRouter / OpenAI / Gemini key depending on provider.
 
 📦 Step 4: Start Backend Server
+
 npm start
 
 You should see:
@@ -108,8 +120,13 @@ Server running on 5000
 Loaded Docs: [...]
 
 Backend runs at:
+```bash
 
 http://localhost:5000
+
+https://ai-support-backend-9v16.onrender.com/
+
+```
 
 🎨 2️⃣ Frontend Setup
 📦 Step 1: Navigate to Frontend
@@ -120,8 +137,11 @@ npm install
 npm run dev
 
 Frontend runs at:
+```bash
+https://ai-support-assistant-sand.vercel.app/
 
 http://localhost:5173
+```
 🗄 3️⃣ SQLite Database
 
 Database file:
@@ -132,19 +152,27 @@ Automatically created when backend starts.
 
 🧱 Database Schema
 ✅ sessions Table
+```bash
 Column Type
 id            TEXT (PK)
 created_at    DATETIME
 updated_at    DATETIME
+
+```
 ✅ messages Table
+```bash
 Column Type
 id              INTEGER (PK)
 session_id      TEXT
 role            TEXT ("user"/"assistant")
 content         TEXT
 created_at      DATETIME
+
+```
+
 🌐 API Documentation
 🔹 1. Chat Endpoint
+```bash
 POST /api/chat
 Request
 {
@@ -156,35 +184,40 @@ Response
 "reply": "Users can reset password from Settings > Security.",
 "tokensUsed": 123
 }
+```
 🔹 2. Fetch Conversation
+```bash
 GET /api/conversations/:sessionId
 
+```
 Returns full conversation in chronological order.
 
 Example:
-
+```bash
 GET /api/conversations/abc123
-
+```
 Response:
-
+```bash
 [
-{
-"role": "user",
-"content": "Hi",
-"created_at": "2026-02-24T12:00:00"
-}
+  {
+  "role": "user",
+  "content": "Hi",
+  "created_at": "2026-02-24T12:00:00"
+  }
 ]
+```
 🔹 3. List Sessions
 GET /api/sessions
 
 Returns:
-
+```bash
 [
 {
 "id": "abc123",
 "updated_at": "2026-02-24T12:10:00"
 }
 ]
+```
 📄 Document-Based Answering
 
 Documentation is stored in:
@@ -192,13 +225,14 @@ Documentation is stored in:
 backend/docs.json
 
 Example:
-
+```bash
 [
-{
-"title": "Reset Password",
-"content": "Users can reset password from Settings > Security."
-}
+  {
+  "title": "Reset Password",
+  "content": "Users can reset password from Settings > Security."
+  }
 ]
+```
 Rules:
 
 Only answers using this content
@@ -295,7 +329,28 @@ Session sidebar history UI
 
 📸 Screenshots
 
-(Add screenshots here)
+### 🖥️ Chat Interfaces
+### 💻 Laptop View
+<p align="center">
+  <img src="./frontend/src/assets/UI-Laptop-view.png" width="900"/>
+</p>
+
+### 📱 Mobile View
+<p align="center">
+  <img src="./frontend/src/assets/UI-Mobile-view.png" width="400"/>
+</p>
+
+### 📲 Tab View
+<p align="center">
+  <img src="./frontend/src/assets/UI-Tab-view.png" width="600"/>
+</p>
+
+### 📲 Database Schema
+<p align="center">
+  <img src="./frontend/src/assets/DB-Schema.png" width="600"/>
+</p>
+
+```bash
 
 📊 Evaluation Criteria Coverage
 Requirement Status
@@ -308,6 +363,8 @@ Rate Limiting ✅
 API Endpoints ✅
 Error Handling ✅
 UI/UX ✅
+
+```
 👨‍💻 Author
 
 Sai Kumar Bandi
