@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  background-color: #0f172a;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 64px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 24px;
+  z-index: 1000;
+
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  color: white;
+}
+
+.chat-input {
+  height: 44px !important;
+  border-radius: 24px !important;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+/* Tablet and above */
+@media (min-width: 768px) {
+  .chat-input {
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+/* Desktop large screens */
+@media (min-width: 1200px) {
+  .chat-input {
+    height: 36px;
+    font-size: 13px;
+    max-width: 600px;
+  }
+}
+
+.app-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.chat-card {
+  width: 100%;
+  max-width: 900px;
+  height: 100%;
+  background: #1e293b;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #334155;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.chat-messages::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 10px;
+}
+
+.chat-input-container {
+  display: flex;
+  gap: 10px;
+  padding: 16px;
+  border-top: 1px solid #334155;
+  background: #1e293b;
+}
+
+.chat-input-container input {
+  background: #0f172a !important;
+  border: 1px solid #334155 !important;
+  color: #e2e8f0 !important;
+}
+
+.chat-input-container input:focus {
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 1px #3b82f6;
+}
+
+.ant-btn-primary {
+  background-color: #3b82f6 !important;
+  border: none !important;
+  transition: all 0.2s ease;
+}
+
+.ant-btn-primary:hover {
+  background-color: #2563eb !important;
+  transform: translateY(-1px);
+}
+
+.ant-btn-primary:active {
+  transform: scale(0.97);
+}
+
+/* Entire chat area */
+.chat-container {
+  height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+  background: #0f172a;
+}
+
+/* Scrollable messages */
+.messages-container {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px;
+  scrollbar-width: thin;
+}
+
+/* Input fixed bottom */
+.input-container {
+  display: flex;
+  align-items: center;   /* ✅ vertically center */
+  justify-content: center; 
+  gap: 12px;
+  padding: 14px 20px;
+  background: rgba(15, 23, 42, 0.95);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  
+}
+
+

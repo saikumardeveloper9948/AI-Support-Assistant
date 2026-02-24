@@ -1,0 +1,102 @@
+[
+  {
+    "title": "Reset Password",
+    "content": "Users can reset password from Settings > Security."
+  },
+  {
+    "title": "Refund Policy",
+    "content": "Refunds are allowed within 7 days of purchase."
+  },
+  {
+    "title": "Change Email",
+    "content": "Users can change their registered email address from Settings > Account Information."
+  },
+  {
+    "title": "Delete Account",
+    "content": "Users can permanently delete their account from Settings > Privacy > Delete Account."
+  },
+  {
+    "title": "Subscription Plans",
+    "content": "We offer Basic, Pro, and Enterprise subscription plans. Users can upgrade from the Billing section."
+  },
+  {
+    "title": "Cancel Subscription",
+    "content": "Users can cancel their subscription anytime from Settings > Billing > Cancel Subscription."
+  },
+  {
+    "title": "Update Payment Method",
+    "content": "Users can update their payment method from Settings > Billing > Payment Methods."
+  },
+  {
+    "title": "Two-Factor Authentication",
+    "content": "Users can enable two-factor authentication from Settings > Security > Two-Factor Authentication."
+  },
+  {
+    "title": "Contact Support",
+    "content": "Users can contact support through the Help Center or by emailing support@example.com."
+  },
+  {
+    "title": "Data Privacy",
+    "content": "We follow strict data privacy standards and do not share user data with third parties without consent."
+  },
+  {
+    "title": "Account Verification",
+    "content": "Users must verify their email address after registration by clicking the verification link sent to their inbox."
+  },
+  {
+    "title": "Login Issues",
+    "content": "If users cannot log in, they should reset their password or ensure their account is verified."
+  },
+  {
+    "title": "Profile Update",
+    "content": "Users can update their profile information from Settings > Profile."
+  },
+  {
+    "title": "Download Invoice",
+    "content": "Users can download their invoices from Settings > Billing > Invoices."
+  },
+  {
+    "title": "Upgrade Plan",
+    "content": "Users can upgrade their subscription plan from the Billing section at any time."
+  },
+  {
+    "title": "Downgrade Plan",
+    "content": "Users can downgrade their subscription plan from Settings > Billing > Manage Plan."
+  },
+  {
+    "title": "Account Suspension",
+    "content": "Accounts may be suspended if they violate our terms of service."
+  },
+  {
+    "title": "Terms of Service",
+    "content": "Users must agree to our Terms of Service before using the platform."
+  },
+  {
+    "title": "Password Requirements",
+    "content": "Passwords must contain at least 8 characters, including one uppercase letter, one number, and one special character."
+  },
+  {
+    "title": "Session Timeout",
+    "content": "For security reasons, user sessions automatically expire after 30 minutes of inactivity."
+  },
+  {
+    "title": "Notification Settings",
+    "content": "Users can manage email and push notifications from Settings > Notifications."
+  },
+  {
+    "title": "Language Preferences",
+    "content": "Users can change the application language from Settings > Preferences."
+  },
+  {
+    "title": "Dark Mode",
+    "content": "Users can enable dark mode from Settings > Appearance."
+  },
+  {
+    "title": "Data Export",
+    "content": "Users can export their personal data from Settings > Privacy > Export Data."
+  },
+  {
+    "title": "Security Alerts",
+    "content": "Users receive security alerts via email if suspicious activity is detected."
+  }
+]
